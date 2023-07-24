@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+    <link rel="icon" href="./html5.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>My Goals of the Year</h1>
+        
+
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li>
+                    <a href="#html">Learning HTML</a>
+                </li>
+                <li>
+                    <a href="#cssandJS">Learning CSS and JavaScript</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+    <main>
+        <article id="html">
+        <h2>I'm Ready to learn HTML</h2>
+        <p>This is my First Web Page.</p>
+        <section>
+            <h3>HTML5</h3>
+            <img src="img/HTML_Logo.png" alt="HTML5 Logo" title="I am Learning HTML"
+            width="300" height="300">
+            <figure>
+                <figcaption>An Example of HTML5</figcaption>
+                <p>
+                    <code>&lt;h1&gt;Hello World!&lt;/h1&gt; </code>
+                </p>
+            </figure>
+        </section>
+        <section>
+            <h3>My Daily Schedule</h3>
+            <p>Let me tell you how:</p>
+                <ol>
+                <li>...I Learn more about web dev.</li>
+                <li>...I plan about my Schedule.</li>
+                <li>...I use resources from <abbr title="Mozilla Developer Network">
+                    <a href="https://developer.mozilla.org/">MDN</a>
+                </abbr>.</li>
+            </ol>
+            <aside>
+                <details>
+                    <summary>Guess the <mark>number of hours</mark> I code per day</summary>
+                    <p>I Start at <time datetime="08:30">8:30pm</time> and code for <time datetime="PT3H">3hrs</time> at night, bcoz morning I go to work.</p>
+                </details>
+            </aside>
+        </section>
+        </article>
+        <hr>
+        <article id="cssandJS">
+        <!--TODO: Learn Fastly -->
+        
+        <h2>I'm Also Planning to Learn next about CSS and JavaScript and then frameworks</h2>
+        <figure>
+            <img src="img/CSS_Logo.png" alt="CSS Logo" title="I want to Learn CSS"
+            width="300" height="300">
+            <img src="img/BootStrap_Logo.png" alt="BootStrap Logo" title="I want to Learn BootStrap"
+            width="300" height="300">
+            <img src="img/JS_Logo.png" alt="JS Logo" title="I want to Learn JS"
+            width="300" height="300">
+            <img src="img/React_Logo.png" alt="React Logo" title="I want to Learn React"
+            width="300" height="300">
+        </figure>
+        <ul>
+        <li><p>Wanna Learn it from <strong>freecodecamp</strong>.
+            <br>And Some other resources.
+            <br>Thanks to <strong>wemakedevs</strong> for the <em>Roadmap</em>.</li>
+        </ul>
+        </article>
+
+        <hr>
+
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p>I'd really like to hear from you!</p>
+             
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                <p>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Pavan" autocomplete="on" required 
+                    autofocus>
+                </p>
+                <p>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Varma" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="Your Secret" required>
+                </p>
+                <p>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="5555555555"
+                    pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                </p>
+                <p>
+                    <label for="decade">Favorite Decade:</label>
+                    <input type="number" name="decade" id="decade" placeholder="5555555555"
+                    min="1950" max="2023" step="10" value="2000">
+                </p>
+                <p>
+                    <label for="language">Favorite Coding Language</label>
+                    <select name="language" id="language">
+                        <option value="c">C</option>
+                        <option value="c++">C++</option>
+                        <option value="java">Java</option>
+                        <option value="python">Python</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="others">Others</option>
+                    </select>
+                </p>
+                <!-- <p>
+                    <label for="language">Favorite Coding Language</label>
+                    <input type="text" name="language" id="language" list="language-list">
+                    <datalist id="language-list">
+                        <option value="c">
+                        <option value="c++">
+                        <option value="java">
+                        <option value="pyhton">
+                        <option value="javascript">
+                    </datalist>
+                </p> -->
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>What is your Favorite Development</legend>
+                    <p>
+                        <input type="radio" name="development" id="front-end" value="front-end">
+                        <label for="front-end">Front-end Development</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="development" id="back-end" value="back-end">
+                        <label for="back-end">Back-end Development</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="development" id="fullstack" value="fullstack">
+                        <label for="fullstack">FullStack Web Development</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Send Me A Note</legend>
+                    <label for="message">Your message:</label>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type Your message here"></textarea>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
+            </form>
+        </article>
+    </main>
+    <hr>
+    <footer>
+        <p>
+            &lt;&lt;&lt; &copy; <a href="about.html">Pavan Varma</a>&gt;&gt;&gt;
+        </p>
+        <p>
+            <a href="#">Back to Top</a>
+        </p>   
+    </footer>
+</body>
+</html>
